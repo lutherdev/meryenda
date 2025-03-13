@@ -1,0 +1,57 @@
+
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(195, 230, 205);
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            gap: 2rem;
+        }
+        #menubox{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .menufood{
+            border: 1px solid black;
+            height: 300px;
+            flex-shrink: 1;
+            flex-grow: 0;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            cursor:pointer;
+        }
+        img{
+            height: 100%;
+            width: 300px;   
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .menufood:hover img{
+            height: 90%;
+        }
+
+        #orders{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        .modal-header{
+            background-color: rgb(195, 230, 205);
+        }
+        
+        @media (max-width: 750px){
+            img{
+                height: 90%;
+            }
+        }
